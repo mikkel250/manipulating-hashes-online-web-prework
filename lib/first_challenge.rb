@@ -19,9 +19,8 @@ def first_challenge
   data.each do |attribute, value|
     if attribute == :favorite_icecream_flavors
       value.each do |flavor|
-       puts value[flavor]
-       puts value[flavor].index
-       #value[flavor.index].slice!(flavor.index, 1) if value[flavor] == "strawberry"
+      puts flavor.index
+       value.slice!(flavor.index, 1) if value == "strawberry"
         
       end
     end
