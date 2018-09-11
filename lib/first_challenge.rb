@@ -1,9 +1,9 @@
 def first_challenge
-  contacts = {
-    "Jon Snow" => {   #person
-      name: "Jon",    #data
+  contacts = {   # contacts (key), hash (val)
+    "Jon Snow" => {   # name (key), attribute (val)
+      name: "Jon",    
       email: "jon_snow@thewall.we", 
-      favorite_icecream_flavors: ["chocolate", "vanilla", "mint chip"],
+      favorite_icecream_flavors: ["chocolate", "vanilla", "mint chip"],  # attr (key), arr (val)
       knows: nil
     },
     "Freddy Mercury" => {
