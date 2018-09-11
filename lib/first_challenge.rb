@@ -20,7 +20,7 @@ def first_challenge
     if attribute == :favorite_icecream_flavors
       value.each do |flavor|
       ind = value.index("strawberry")
-       value.slice!(flavor, 1) if flavor == "strawberry"
+       value.slice!(ind, 1) if flavor == "strawberry"
         
       end
     end
