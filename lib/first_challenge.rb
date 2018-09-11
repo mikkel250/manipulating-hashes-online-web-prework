@@ -16,8 +16,11 @@ def first_challenge
   #your code here
   
   contacts.each do |person, data|
+    puts person
     data.each do |attribute, value| if person == "Freddy Mercury"
+    puts value
       value.each do |index|
+        puts index
        value.slice!(index, 1) if value[index] == "strawberry" #this is an array!
       
       end
