@@ -19,7 +19,7 @@ def first_challenge
     puts data
    data.each do |attribute, value| if person == "Freddy Mercury"
     puts value
-      value.each do |index|
+      value.each do |index| if value == :favorite_icecream_flavors
         puts index
        value.slice!(index, 1) if value[index] == "strawberry" #this is an array!
       
