@@ -15,11 +15,11 @@ def first_challenge
 
   #your code here
   
-  contacts.each do |person, data|
-    puts data
-   data.each do |attribute, value| if person == "Freddy Mercury"
-    puts value
-      value.each do |index| if attribute == :favorite_icecream_flavors
+  contacts.each do |key, val|
+    
+   key.each do |key1, val1| if key == "Freddy Mercury"
+    
+      val1.each do |index| if attribute == :favorite_icecream_flavors
         puts index
        value.slice!(index, 1) if value[index] == "strawberry" #this is an array!
       
