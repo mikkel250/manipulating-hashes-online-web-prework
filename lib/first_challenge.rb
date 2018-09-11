@@ -23,9 +23,9 @@ def first_challenge
         puts index
        value.slice!(index, 1) if value[index] == "strawberry" #this is an array!
       
+          end
+        end
       end
-    end
-  end
 end
 end
   #remember to return your newly altered contacts hash!
