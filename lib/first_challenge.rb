@@ -17,7 +17,7 @@ def first_challenge
   
   contacts.each do |person, data|
     puts person
-    data.each do |attribute, value| if person == "Freddy Mercury"
+    person.each do |attribute, value| if person == "Freddy Mercury"
     puts value
       value.each do |index|
         puts index
