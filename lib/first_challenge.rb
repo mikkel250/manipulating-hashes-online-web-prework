@@ -1,9 +1,9 @@
 def first_challenge
-  contacts = {
-    "Jon Snow" => {
-      name: "Jon",
+  contacts = {   # contacts (key), hash (val)
+    "Jon Snow" => {   # name (key), attribute (val)
+      name: "Jon",    
       email: "jon_snow@thewall.we", 
-      favorite_icecream_flavors: ["chocolate", "vanilla", "mint chip"],
+      favorite_icecream_flavors: ["chocolate", "vanilla", "mint chip"],  # attr (key), arr (val)
       knows: nil
     },
     "Freddy Mercury" => {
@@ -14,7 +14,18 @@ def first_challenge
   }
 
   #your code here
-
+  
+ contacts.each do |person, data|
+  data.each do |attribute, value|
+    if attribute == :favorite_icecream_flavors
+      value.each do |flavor|
+      ind = value.index("strawberry")
+       value.slice!(ind, 1) if flavor == "strawberry"
+        
+      end
+    end
+  end
+end
 
   #remember to return your newly altered contacts hash!
   contacts
