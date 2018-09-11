@@ -1,7 +1,7 @@
 def first_challenge
   contacts = {
-    "Jon Snow" => {
-      name: "Jon",
+    "Jon Snow" => {   #person
+      name: "Jon",    #data
       email: "jon_snow@thewall.we", 
       favorite_icecream_flavors: ["chocolate", "vanilla", "mint chip"],
       knows: nil
