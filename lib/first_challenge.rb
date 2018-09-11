@@ -21,7 +21,7 @@ def first_challenge
       value.each do |flavor|
        puts value[flavor]
        puts value[flavor].index
-       value[flavor.index].slice!(flavor.index, 1) if value[flavor] == "strawberry"
+       #value[flavor.index].slice!(flavor.index, 1) if value[flavor] == "strawberry"
         
       end
     end
