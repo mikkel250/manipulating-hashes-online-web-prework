@@ -18,10 +18,11 @@ def first_challenge
   contacts.each do |key, val|
     
    key.each do |key1, val1| if key == "Freddy Mercury"
-    
-      val1.each do |index| if attribute == :favorite_icecream_flavors
-        puts index
-       value.slice!(index, 1) if value[index] == "strawberry" #this is an array!
+    #contacts["Freddy Mercury"][each]
+      key1.each do |key2, val2| if key1 == :favorite_icecream_flavors
+        #contacts["Freddy Mercury"][:favorite_icecream_flavors][each]
+       key2.each do |key3, val3|
+       key2[val2].slice!(index, 1) if key3[val3] == "strawberry" #this is an array!
       
           end
         end
