@@ -16,14 +16,11 @@ def first_challenge
   #your code here
   
  contacts.each do |person, data|
- 
- 
   data.each do |attribute, value|
-    
     if attribute == :favorite_icecream_flavors
       value.each do |flavor|
-       
-        puts "#{flavor}"
+       value[flavor].slice!(flavor, 1) if value[flavor] == "strawberry"
+        
       end
     end
   end
