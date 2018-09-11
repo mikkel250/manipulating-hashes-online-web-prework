@@ -15,20 +15,7 @@ def first_challenge
 
   #your code here
   
-  contacts.each do |key, val|
-    
-   val.each do |key1, val1| if key == "Freddy Mercury"
-    #contacts["Freddy Mercury"][each]
-      key1.each do |key2, val2| if key1 == :favorite_icecream_flavors
-        #contacts["Freddy Mercury"][:favorite_icecream_flavors][each]
-       key2.each do |key3, val3|
-       key2[val2].slice!(index, 1) if key3[val3] == "strawberry" #this is an array!
-            end
-          end
-        end
-      end
-  end
-end
+ 
   #remember to return your newly altered contacts hash!
   contacts
 end
