@@ -23,7 +23,7 @@ def first_challenge
         #contacts["Freddy Mercury"][:favorite_icecream_flavors][each]
        key2.each do |key3, val3|
        key2[val2].slice!(index, 1) if key3[val3] == "strawberry" #this is an array!
-      
+            end
           end
         end
       end
